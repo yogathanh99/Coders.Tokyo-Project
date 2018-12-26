@@ -1,0 +1,36 @@
+{
+  "todos": [
+    {
+      "id": 1,
+      "content": "Go to school"
+    },
+    {
+      "id": 2,
+      "content": "Go to English class"
+    },
+    {
+      "id": 3,
+      "content": "Hang out with gf"
+    },
+    {
+      "content": "123",
+      "id": 4
+    },
+    {
+      "content": "1234",
+      "id": 5
+    },
+    {
+      "content": "hoc va ngu",
+      "id": 6
+    },
+    {
+      "content": "ngu",
+      "id": 7
+    },
+    {
+      "content": "haha",
+      "id": 8
+    }
+  ]
+}
