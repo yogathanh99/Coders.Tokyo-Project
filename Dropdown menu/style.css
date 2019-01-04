@@ -1,0 +1,39 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu li {
+  padding: 10px 16px;
+}
+
+.menu li:hover {
+  background-color: #ddd;
+}
+
+.hasSubmenu {
+  position: relative;
+}
+
+.hasSubmenu:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+}
