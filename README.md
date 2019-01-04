@@ -6,3 +6,7 @@
 ## 4. CSS Specificity:
 - `elements < class < id < inline css < !important`
 - Reference [HERE](http://cssspecificity.com/) or [HERE](https://specificity.keegan.st/)
+## 5. CSS Effect Reference:
+- [HERE](https://tympanus.net/codrops/)
+- Transition: [HERE](https://www.w3schools.com/css/css3_transitions.asp)
+- Easing function for transition: [HERE](https://easings.net/)
