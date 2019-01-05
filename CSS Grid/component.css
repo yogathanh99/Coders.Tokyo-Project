@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  ;
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.menu li {
+  padding: 10px 16px;
+}
+
+.menu li:hover {
+  background-color: #ddd;
+}
+
+.hasSubmenu {
+  position: relative;
+}
+
+.hasSubmenu:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+}
+
+.zingchart {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.zingchart .number {
+  font-size: 22px;
+  padding: 0 10px;
+}
+
+.zingchart .info {
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.zingchart .music {
+  margin-bottom: 8px;
+}
+
+.zingchart .singer {
+  font-size: 12px;
+  color: #999999;
+}
+
+.zingchart .viewer {
+  font-size: 12px;
+  color: #999999;
+}

@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.item {
+  padding: 50px;
+  text-align: center;
+  background-color: #ddd;
+  border: 1px solid #888;
+}
+
+@media (min-width: 600px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .item {
+    flex-grow: 1;
+  }
+}
