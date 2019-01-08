@@ -1,11 +1,21 @@
-form(action="/users/search", method="GET")
-  input(type="text" name="q" placeholder="Input here" value=q)
-  button Search
-a(href="/users/create") Add name
-h1 Users:
-ul
-  each user in users
-    li
-      span=user.name
-      span &nbsp
-      a(href=`/users/${user.id}`) View
+extends ../layouts/common
+
+block content
+  h1
+    span.mr-3 Users
+    a.btn.btn-success(href="/users/create") Add name
+  .d-flex.align-items-center
+    form.ml-auto(action="/users/search", method="GET", class="form-row")
+      input.mr-2(type="text" name="q", placeholder="Input here", value=q)
+      button(class="btn btn-primary") Search
+  table.table
+    tr
+      th Name
+      th Phone
+      th Actions
+    each user in users
+      tr
+        td=user.name
+        td=user.phone
+        td
+          a(href=`/users/${user.id}`) View

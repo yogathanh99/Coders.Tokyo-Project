@@ -1,7 +1,10 @@
-h1 View User:
+extends ../layouts/common
 
-p
-  b Name:
-  span &nbsp
-  span= user.name
-a(href='/users') Back to View All
+block content
+  h1 View User:
+
+  p
+    b Name:
+    span &nbsp
+    span= user.name
+  a(href='/users') Back to View All

@@ -14,3 +14,4 @@
 ## 7. Read Pug docs: [HERE](https://pugjs.org/api/getting-started.html)
 ## 8. Automatic re-running server node: `npm i --save-dev nodemon`
 ## 9. Game for practice CSS Selectors: [HERE](https://flukeout.github.io/?fbclid=IwAR1Hu72rMUbhGSjd01J2FDKDfsVhDhfl8oPRDBuMbwy4v_0dpj5Ib8YiBdc)
+## 10. Convert HTML to Pug: [HERE](https://html2jade.org/)

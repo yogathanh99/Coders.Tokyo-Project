@@ -1,6 +1,16 @@
-h1.create Create
+extends ../layouts/common
 
-form(action="/users/create", method="POST")
-  label Name
-  input(type="text", name="name", placeholder="Input here")
-  button Create
+block content
+  h1.create Create
+  if errors
+    each error in errors
+      .alert.alert-danger=error
+
+  form(action="/users/create", method="POST", class="form-col")
+    .form-row
+      label(for="name", class="mt-2 pl-3 mr-2") Name
+      input#name(class="form-control col-3 mr-2", type="text", name="name", placeholder="Input here", value=values? values.name: "")
+    .form-row.mt-2
+      label(for="phone", class="mt-2 pl-3 mr-2") Phone
+      input#phone(class="form-control col-3 mr-2", type="text", name="phone", placeholder="Input here", value=values? values.phone: "")
+    button.mt-2(class="btn btn-success") Create
