@@ -11,3 +11,5 @@
 - Transition: [HERE](https://www.w3schools.com/css/css3_transitions.asp)
 - Easing function for transition: [HERE](https://easings.net/)
 ## 6. CSS Grid: [HERE](https://css-tricks.com/snippets/css/complete-guide-grid/)
+## 7. Read Pug docs: [HERE](https://pugjs.org/api/getting-started.html)
+## 8. Automatic re-running server node: `npm i --save-dev nodemon`
