@@ -1,10 +1,23 @@
-nav.navbar.navbar-expand-sm.bg-dark.navbar-dark
-  a.navbar-brand(href='/')
-    img(src='/images/logo.png', style='width:64px;')
-  ul.navbar-nav
-    li.nav-item
-      a.nav-link(href='/') Home
-    li.nav-item
-      a.nav-link(href='/users/create') Add User
-    li.nav-item
-      a.nav-link(href='/users') View Users
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+    a.navbar-brand(href='/')
+      img(src='/images/logo.png', style='width:64px;')
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarNavDropdown', aria-controls='navbarNavDropdown', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarNavDropdown.navbar-collapse.collapse
+      ul.navbar-nav.mr-auto
+        li.nav-item.active
+          a.nav-link(href='/')
+            | Home
+            span.sr-only (current)
+        li.nav-item
+          a.nav-link(href='/users/create') Add User
+        li.nav-item
+          a.nav-link(href='/users') View Users
+      ul.navbar-nav
+        if user
+          li.nav-item
+            p.mt-2.mr-2(style="color: white")= user.name
+        li.nav-item
+          a.btn.btn-primary(href="/auth/login") Login
+        li.nav-item
+          a.btn.btn-success.ml-2(href="/create") Register

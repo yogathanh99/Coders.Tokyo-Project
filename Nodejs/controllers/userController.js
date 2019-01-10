@@ -1,4 +1,5 @@
 const shortid = require('shortid')
+const md5 = require('md5');
 
 const db = require('../modules/db')
 
@@ -35,25 +36,11 @@ module.exports.viewInfo= (req, res) => {
 }
 
 //Post Create
-module.exports.postCreate= (req, res) => {
+module.exports.postCreate = (req, res) => {
+  const hashPassword = md5(req.body.password)
+  req.body.password=hashPassword
   req.body.id = shortid.generate()
 
-  let errors = []
-
-  if (!req.body.name) {
-    errors.push('Name is required')
-  }
-  if (!req.body.phone) {
-    errors.push('Phone is required')
-  }
-
-  if (errors.length) {
-    res.render('users/create', {
-      errors: errors,
-      values: req.body
-    })
-    return
-  }
   db.get('users').push(req.body).write()
 
   res.redirect('/users')

@@ -3,37 +3,30 @@
     {
       "name": "Vo Trung Thanh",
       "id": "XPm6ju2Va",
-      "phone": "0939796788"
+      "phone": "0939796788",
+      "email": "yogathanh98@gmail.com",
+      "password": "202cb962ac59075b964b07152d234b70"
     },
     {
       "name": "Nguyen Tam Minh",
-      "id": "19Ky-Qve_",
-      "phone": "0939794788"
+      "phone": "0939293788",
+      "email": "nguyentamminh@gmail.com",
+      "password": "827ccb0eea8a706c4c34a16891f84e7b",
+      "id": "YM6DkI1ch"
     },
     {
       "name": "Thanh Vo",
-      "id": "e78_ACkVh",
-      "phone": "0939794288"
+      "phone": "0912354346",
+      "email": "vtthanh@gmail.com",
+      "password": "8ba736de2a0f67f81fa4547ab82f8624",
+      "id": "VUnB9igOU"
     },
     {
       "name": "Minh",
-      "id": "xX8Gl-_t6",
-      "phone": "0932794788"
-    },
-    {
-      "name": "Hello World",
-      "id": "O6VSEjQ78",
-      "phone": "0939794288"
-    },
-    {
-      "name": "123",
-      "phone": "123",
-      "id": "QVnKQZmL4"
-    },
-    {
-      "name": "asdas",
-      "phone": "0123123",
-      "id": "8Rbv4ujT4"
+      "phone": "095465362",
+      "email": "213@gmail.com",
+      "password": "3e080de5f35694cc435d6b10cf0a22bf",
+      "id": "QxzyETOmf"
     }
   ]
 }

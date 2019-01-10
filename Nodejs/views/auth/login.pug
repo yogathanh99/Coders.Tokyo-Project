@@ -1,22 +1,16 @@
 extends ../layouts/common
 
 block content
-  h1.create Create
+  h1 Login
   if errors
     each error in errors
       .alert.alert-danger=error
 
-  form(action="/users/create", method="POST", class="form-col")
+  form(method="POST", class="form-col")
     .form-row
-      label(for="name", class="mt-2 pl-3 mr-2") Name
-      input#name(class="form-control col-3 mr-2", type="text", name="name", placeholder="Input here", value=values? values.name: "")
-    .form-row.mt-2
-      label(for="phone", class="mt-2 pl-3 mr-2") Phone
-      input#phone(class="form-control col-3 mr-2", type="text", name="phone", placeholder="Input here", value=values? values.phone: "")
-    .form-row.mt-2
       label(for="email", class="mt-2 pl-3 mr-2") Email
       input#email(class="form-control col-3 mr-2", type="email", name="email", placeholder="Input here", value=values? values.email: "")
     .form-row.mt-2
       label(for="password", class="mt-2 pl-3 mr-2") Password
       input#password(class="form-control col-3 mr-2", type="password", name="password", placeholder="Input here", value=values? values.password: "")
-    button.mt-2(class="btn btn-success") Create
+    button.mt-2(class="btn btn-success") Login
