@@ -6,7 +6,7 @@ block content
     each error in errors
       .alert.alert-danger=error
 
-  form(action="/users/create", method="POST", class="form-col")
+  form(action="/users/create", method="POST", class="form-col", enctype="multipart/form-data")
     .form-row
       label(for="name", class="mt-2 pl-3 mr-2") Name
       input#name(class="form-control col-3 mr-2", type="text", name="name", placeholder="Input here", value=values? values.name: "")
@@ -19,4 +19,7 @@ block content
     .form-row.mt-2
       label(for="password", class="mt-2 pl-3 mr-2") Password
       input#password(class="form-control col-3 mr-2", type="password", name="password", placeholder="Input here", value=values? values.password: "")
+    .form-row.mt-2
+      label(for="avatar", class="mt-2 pl-3 mr-2") Avatar
+      input#avatar(class="form-control col-3 mr-2", type="file", name="avatar")
     button.mt-2(class="btn btn-success") Create

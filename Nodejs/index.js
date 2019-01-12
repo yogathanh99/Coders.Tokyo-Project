@@ -7,14 +7,19 @@ const cookieParser = require('cookie-parser')
 
 const userRoute = require('./routes/userRoute')
 const authRoute = require('./routes/authRoute')
+const productRoute = require('./routes/productRoute')
+const cartRoute= require('./routes/cartRoute')
+
 const authMiddleware = require('./middleware/authMiddleware')
+const sessionMiddleware = require('./middleware/sessionMiddleware')
 
 const port = 3000
 
 
-app.use(bodyParser.json()); // for parsing application/json
+app.use(bodyParser.json()); // for parsing application/json. Speacial: bodyParse does not support for upload multi-media file (image...)
 app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 app.use(cookieParser(process.env.SESSION_SECRET))
+app.use(sessionMiddleware)
 
 //Set-up for Pug file
 app.set('view engine', 'pug')
@@ -30,6 +35,10 @@ app.get('/create', (req,res)=> res.render('users/create'))
 app.use('/users/',authMiddleware.checkAuth, userRoute)
 //Route login
 app.use('/auth', authRoute)
+//Route product
+app.use('/products', authMiddleware.checkAuth, productRoute)
+//Route cart
+app.use('/cart', cartRoute)
 
 app.listen(port, () =>console.log(`Server listening on port ${port}`))
 

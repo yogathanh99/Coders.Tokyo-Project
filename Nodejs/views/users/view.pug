@@ -1,18 +1,19 @@
 extends ../layouts/common
 
 block content
-  h1 View User:
-
-  p
-    b Name:
-    span &nbsp
-    span= user.name
-  p
-    b Phone:
-    span &nbsp
-    span=user.phone
-  p
-    b Email:
-    span &nbsp
-    spam=user.email
-  a.btn.btn-primary(href='/users') Back to View All
+  .float-left
+    h1 View User:
+    p
+      b Name:
+      span &nbsp
+      span= user.name
+    p
+      b Phone:
+      span &nbsp
+      span=user.phone
+    p
+      b Email:
+      span &nbsp
+      spam=user.email
+    a.btn.btn-primary(href='/users') Back to View All
+  img.float-right.rounded-circle(src=`http://localhost:3000/${user.avatar}`, width='30%')

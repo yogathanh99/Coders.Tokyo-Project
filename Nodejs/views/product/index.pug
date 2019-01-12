@@ -1,0 +1,40 @@
+extends ../layouts/common
+
+block content
+  h1.text-center.mb-3 Welcome to Product
+
+  .row
+    each product in products
+      .col-12.col-sm-6.col-md-4.col-lg-4.col-xl-4.mb-3
+        .card(style='width: 18rem;')
+          img.card-img-top(src=product.image)
+          .card-body
+            h5.card-title=product.name
+            p.card-text=product.description
+            a.btn.btn-primary(href=`/cart/add/${product.id}`) Add to cart
+  if page=== '1'
+    nav(aria-label='Page navigation example')
+      ul.pagination.justify-content-end
+        li.page-item.disabled
+          a.page-link(href=`/products?page=${parseInt(page)-1}`, tabindex='-1', aria-disabled='true') Previous
+        li.page-item.active
+          a.page-link(href=`/products?page=${parseInt(page)}`)=page
+        li.page-item
+          a.page-link(href=`/products?page=${parseInt(page)+1}`)=parseInt(page)+1
+        li.page-item
+          a.page-link(href=`/products?page=${parseInt(page)+2}`)=parseInt(page)+2
+        li.page-item
+          a.page-link(href=`/products?page=${parseInt(page)+1}`) Next
+  else
+    nav(aria-label='Page navigation example')
+      ul.pagination.justify-content-end
+        li.page-item
+          a.page-link(href=`/products?page=${parseInt(page)-1}`, tabindex='-1') Previous
+        li.page-item
+          a.page-link(href=`/products?page=${parseInt(page)-1}`)=parseInt(page)-1
+        li.page-item.active
+          a.page-link(href=`/products?page=${parseInt(page)}`)=page
+        li.page-item
+          a.page-link(href=`/products?page=${parseInt(page)+1}`)=parseInt(page)+1
+        li.page-item
+          a.page-link(href=`/products?page=${parseInt(page)+1}`) Next

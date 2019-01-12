@@ -10,12 +10,15 @@ block content
       button(class="btn btn-primary") Search
   table.table
     tr
+      th Avatar
       th Name
       th Phone
       th Email
       th Actions
     each user in users
       tr
+        td
+          img.rounded-circle(src=user.avatar, width='64', height='64')
         td=user.name
         td=user.phone
         td=user.email

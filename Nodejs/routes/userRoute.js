@@ -1,5 +1,8 @@
 const express = require('express')
 const router = express.Router()
+const multer = require('multer')
+var upload = multer({ dest: './public/uploads' })
+
 
 const controllers = require('../controllers/userController')
 const validate =require('../validate/userValidate')
@@ -16,6 +19,6 @@ router.get('/create', controllers.create)
 router.get('/:id', controllers.viewInfo)
 
 //Route Post Create
-router.post('/create', validate.validation, controllers.postCreate) //In this, I'm using middleware of Express
+router.post('/create', upload.single('avatar'), validate.validation, controllers.postCreate) //In this, I'm using middleware of Express
 
 module.exports = router;
