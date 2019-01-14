@@ -16,3 +16,5 @@
 ## 9. Game for practice CSS Selectors: [HERE](https://flukeout.github.io/?fbclid=IwAR1Hu72rMUbhGSjd01J2FDKDfsVhDhfl8oPRDBuMbwy4v_0dpj5Ib8YiBdc)
 ## 10. Convert HTML to Pug: [HERE](https://html2jade.org/)
 ## 11. Read [Mongodb](https://www.tutorialspoint.com/mongodb/) and Mongoose: [HERE](https://mongoosejs.com/) or [HERE](https://www.tutorialspoint.com/node_js_online_training/node_js_mongoose.asp)
+## 12. Web read markdown: [HERE](https://dimerapp.com/) but not free
+## 13. Read Javascript closures: [HERE](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
