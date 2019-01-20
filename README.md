@@ -18,3 +18,5 @@
 ## 11. Read [Mongodb](https://www.tutorialspoint.com/mongodb/) and Mongoose: [HERE](https://mongoosejs.com/) or [HERE](https://www.tutorialspoint.com/node_js_online_training/node_js_mongoose.asp)
 ## 12. Web read markdown: [HERE](https://dimerapp.com/) but not free
 ## 13. Read Javascript closures: [HERE](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
+## 14. If you want to insert all data from json, you just insert like this in terminal:
+`mongoimport --jsonArray --db <database> --collection <collection> --file <address file input>`

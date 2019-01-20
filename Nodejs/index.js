@@ -4,6 +4,9 @@ const express = require('express')
 const app = express()
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser')
+const mongoose = require('mongoose');
+
+mongoose.connect(process.env.MONGO_URL)
 
 const userRoute = require('./routes/userRoute')
 const authRoute = require('./routes/authRoute')
@@ -13,7 +16,7 @@ const cartRoute= require('./routes/cartRoute')
 const authMiddleware = require('./middleware/authMiddleware')
 const sessionMiddleware = require('./middleware/sessionMiddleware')
 
-const port = 3000
+const port = process.env.PORT_URL
 
 
 app.use(bodyParser.json()); // for parsing application/json. Speacial: bodyParse does not support for upload multi-media file (image...)
