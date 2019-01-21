@@ -20,3 +20,4 @@
 ## 13. Read Javascript closures: [HERE](https://medium.com/dailyjs/i-never-understood-javascript-closures-9663703368e8)
 ## 14. If you want to insert all data from json, you just insert like this in terminal:
 `mongoimport --jsonArray --db <database> --collection <collection> --file <address file input>`
+## 15. Read more typechecking with PropTypes in React docs: [HERE](https://reactjs.org/docs/typechecking-with-proptypes.html)

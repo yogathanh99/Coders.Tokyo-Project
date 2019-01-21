@@ -1,27 +1,5 @@
 .App {
-  width: 500px;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid #eee;
-}
-
-.App .Header {
-  padding: 10px 5px;
-  display: flex;
-  border-bottom: 1px solid #eee;
-}
-
-.App .Header input {
-  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
-  font-weight: 300;
-  font-size: 24px;
-  padding-left: 20px;
-  width: 100%;
-  border: none;
-}
-
-.App .Header input:focus {
-  outline: none;
+  text-align: center;
 }
 
 .App-logo {
@@ -48,7 +26,6 @@
   from {
     transform: rotate(0deg);
   }
-
   to {
     transform: rotate(360deg);
   }
