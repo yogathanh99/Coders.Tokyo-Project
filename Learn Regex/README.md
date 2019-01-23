@@ -1,1 +1,1 @@
-Link to learn RegEx in Youtube: [HERE(https://www.youtube.com/playlist?list=PL4cUxeGkcC9g6m_6Sld9Q4jzqdqHd2HiD)
+Link to learn RegEx in Youtube: [HERE](https://www.youtube.com/playlist?list=PL4cUxeGkcC9g6m_6Sld9Q4jzqdqHd2HiD)
