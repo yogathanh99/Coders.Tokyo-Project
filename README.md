@@ -21,3 +21,4 @@
 ## 14. If you want to insert all data from json, you just insert like this in terminal:
 `mongoimport --jsonArray --db <database> --collection <collection> --file <address file input>`
 ## 15. Read more typechecking with PropTypes in React docs: [HERE](https://reactjs.org/docs/typechecking-with-proptypes.html)
+## 16. Practice Javascript in [CodeSignal](https://app.codesignal.com/login) and [CodeWars](https://www.codewars.com/)
