@@ -22,3 +22,4 @@
 `mongoimport --jsonArray --db <database> --collection <collection> --file <address file input>`
 ## 15. Read more typechecking with PropTypes in React docs: [HERE](https://reactjs.org/docs/typechecking-with-proptypes.html)
 ## 16. Practice Javascript in [CodeSignal](https://app.codesignal.com/login) and [CodeWars](https://www.codewars.com/)
+## 17. Sass Docs: [HERE](https://sass-lang.com/documentation/file.SASS_REFERENCE.html)
