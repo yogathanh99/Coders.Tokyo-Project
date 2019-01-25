@@ -1,6 +1,5 @@
 {
-  "users": [
-    {
+  "users": [{
       "name": "Vo Trung Thanh",
       "id": "XPm6ju2Va",
       "phone": "0939796788",
@@ -31,14 +30,12 @@
     {
       "name": "Nguyen Tam Minh new",
       "phone": "1234",
-      "email": "y@gmail.com",
       "password": "81dc9bdb52d04dc20036dbd8313ed055",
       "id": "dEpsMabjk",
       "avatar": "uploads/9b70dde5f7a585b266c3bd0b97da5e39"
     }
   ],
-  "products": [
-    {
+  "products": [{
       "numb": 1,
       "id": "8665e6d7-2a94-403f-946d-bb65d4ab0231",
       "name": "Table Cloth 90x90 Colour",
@@ -739,8 +736,7 @@
       "description": "est congue elementum in hac habitasse platea dictumst morbi vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum"
     }
   ],
-  "sessions": [
-    {
+  "sessions": [{
       "id": "DA_odxt1Z",
       "cart": {
         "8665e6d7-2a94-403f-946d-bb65d4ab0231": 3,
@@ -753,6 +749,9 @@
     },
     {
       "id": "0NDkHciTD"
+    },
+    {
+      "id": "HyblWcn15"
     }
   ]
 }
