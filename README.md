@@ -24,3 +24,5 @@
 ## 16. Practice Javascript in [CodeSignal](https://app.codesignal.com/login) and [CodeWars](https://www.codewars.com/)
 ## 17. Sass Docs: [HERE](https://sass-lang.com/documentation/file.SASS_REFERENCE.html)
 ## 18. RegEx: [Tool](https://regex101.com/) and [Cheatsheet](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649d)
+## 19. Bootstrap for React: [HERE](https://reactstrap.github.io)
+## 20. Axios: [HERE](https://www.npmjs.com/package/axios)
