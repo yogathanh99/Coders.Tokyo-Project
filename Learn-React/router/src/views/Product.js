@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import axios from 'axios'
 import { Container,Row, Col, Card, CardImg, CardText, CardBody,
   CardTitle, Button } from 'reactstrap';
+import {CartContext} from '../contexts/Cart'
 
 export default class Product extends Component {
   constructor(props) {
@@ -29,7 +30,7 @@ export default class Product extends Component {
         <h2>Products</h2>
         <Row>
           {products.map(product => (
-            <Col sm="4">
+            <Col sm="4" key={product.id}>
               <Card>
                 <CardImg
                   top
@@ -38,7 +39,11 @@ export default class Product extends Component {
                 <CardBody>
                   <CardTitle>{product.name}</CardTitle>
                   <CardText>{product.description}</CardText>
-                  <Button>Add to cart</Button>
+                  <CartContext.Consumer>
+                    {({ addToCart }) => (
+                      <Button onClick={()=>addToCart(product)}>Add to cart</Button>
+                    )}
+                  </CartContext.Consumer>
                 </CardBody>
               </Card>
             </Col>
