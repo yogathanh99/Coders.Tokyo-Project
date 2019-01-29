@@ -1,5 +1,7 @@
 .env
 scss
+style.scss
+mixin.scss
 prepros-6.config
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
