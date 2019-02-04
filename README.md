@@ -26,3 +26,4 @@
 ## 18. RegEx: [Tool](https://regex101.com/) and [Cheatsheet](https://medium.com/factory-mind/regex-tutorial-a-simple-cheatsheet-by-examples-649d)
 ## 19. Bootstrap for React: [HERE](https://reactstrap.github.io)
 ## 20. Axios: [HERE](https://www.npmjs.com/package/axios)
+## 21. Web Gradient: [HERE](https://webgradients.com) and Web Color: [HERE](https://flatuicolors.com)
