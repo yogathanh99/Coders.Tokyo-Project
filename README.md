@@ -27,3 +27,5 @@
 ## 19. Bootstrap for React: [HERE](https://reactstrap.github.io)
 ## 20. Axios: [HERE](https://www.npmjs.com/package/axios)
 ## 21. Web Gradient: [HERE](https://webgradients.com) and Web Color: [HERE](https://flatuicolors.com)
+## 22. Clip-path example: [HERE](https://bennettfeely.com/clippy/)
+## 23. HTML Speacial Characters: [HERE](http://www.whatsmyip.org/html-characters/)
