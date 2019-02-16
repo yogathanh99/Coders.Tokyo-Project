@@ -15,6 +15,35 @@
 </head>
 
 <body>
+    <div class="navigation">
+        <input type="checkbox" name="" id="navi-toogle" class="navigation__checkbox">
+        <label for="navi-toogle" class="navigation__button">
+            <span class="navigation__icon"></span>
+        </label>
+
+        <div class="navigation__bg"></div>
+
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">About Natours</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">Your benefits</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">Popular tours</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">Stories</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="" class="navigation__link">Book now</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
     <header class="header">
         <div class="logo-box">
             <img src="./img/logo-white.png" alt="" class="logo">
@@ -97,7 +126,7 @@
                 </div>
             </div>
         </section>
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="center-text margin-bottom-big">
                 <h2 class="heading-secondary">
                     Most popular tours
@@ -129,7 +158,7 @@
                                     <p class="card__price-text">Only</p>
                                     <p class="card__price-value">$247</p>
                                 </div>
-                                <a href="" class="btn btn-white">Book now!</a>
+                                <a href="#popup" class="btn btn-white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -159,7 +188,7 @@
                                     <p class="card__price-text">Only</p>
                                     <p class="card__price-value">$247</p>
                                 </div>
-                                <a href="" class="btn btn-white">Book now!</a>
+                                <a href=#popup class="btn btn-white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -189,7 +218,7 @@
                                     <p class="card__price-text">Only</p>
                                     <p class="card__price-value">$247</p>
                                 </div>
-                                <a href="" class="btn btn-white">Book now!</a>
+                                <a href="#popup" class="btn btn-white">Book now!</a>
                             </div>
                         </div>
                     </div>
@@ -249,7 +278,108 @@
                 <a href="" class="btn-text ">Read all stories &rarr;</a>
             </div>
         </section>
+
+        <section class="section-booking">
+            <div class="row">
+                <div class="book">
+                    <div class="book__form">
+                        <form action="" class="form">
+                            <div class="margin-bottom-medium">
+                                <h2 class="heading-secondary">
+                                    Start booking now
+                                </h2>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="text" class="form__input" placeholder="Full name" id="name" required>
+                                <label for="name" class="form__label">Full name</label>
+                            </div>
+
+                            <div class="form__group">
+                                <input type="email" class="form__input" placeholder="Email address" id="email" required>
+                                <label for="email" class="form__label">Email address</label>
+                            </div>
+
+                            <div class="form__group">
+                                <div class="form__radio-group">
+                                    <input type="radio" name="tour" id="small" class="form__radio-input">
+                                    <label for="small" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Small tour group
+                                    </label>
+                                </div>
+
+                                <div class="form__radio-group margin-bottom-small">
+                                    <input type="radio" name="tour" id="large" class="form__radio-input">
+                                    <label for="large" class="form__radio-label">
+                                        <span class="form__radio-button"></span>
+                                        Large tour group
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form__group">
+                                <button class="btn btn-green">Next step &rarr;</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="footer">
+        <div class="footer__logo-box">
+            <img src="img/logo-green-2x.png" alt="" class=footer__logo>
+        </div>
+
+        <div class="row">
+            <div class="col-1-of-2">
+                <div class="footer__navigation">
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="#" class="footer__link">Company</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Contact</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Carrers</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Privacy Policy</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__link">Terms</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-1-of-2">
+                <p class="footer__copyright">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus accusamus rerum, natus blanditiis illo veniam magni culpa? Inventore iure voluptatibus nobis facilis ducimus incidunt accusantium laborum! A et doloribus laborum!
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/nat-8.jpg" alt="" class="popup__img">
+                <img src="img/nat-9.jpg" alt="" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">&times;</a>
+                <h2 class="heading-secondary margin-bottom-smalls">Start booking now</h2>
+                <h3 class="heading-tertiary margin-bottom-small">Important &ndash; Please read these terms before booking</h3>
+                <p class="popup__text margin-bottom-medium">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At lectus urna duis convallis convallis tellus id interdum. Tellus id interdum velit laoreet id donec ultrices tincidunt. Felis imperdiet proin fermentum leo. Eget nulla facilisi etiam dignissim diam quis. Etiam non quam lacus suspendisse faucibus interdum. Vitae congue eu consequat ac felis. Commodo elit at imperdiet dui accumsan sit amet. Scelerisque fermentum dui faucibus in. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Turpis massa sed elementum tempus egestas sed. Risus nec feugiat in fermentum posuere urna. Congue quisque egestas diam in. Purus sit amet luctus venenatis.
+                </p>
+                <a href="" class="btn btn-green">Book now</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
