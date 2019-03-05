@@ -1,0 +1,60 @@
+.overview {
+	display: flex;
+	align-items: center;
+	border-bottom: 1px solid $greyLight-2;
+
+	&__heading {
+		font-size: 2.25rem;
+		font-weight: 300;
+		text-transform: uppercase;
+		padding: 1.5rem 3rem;
+	}
+
+	&__stars {
+		margin-right: auto;
+		display: flex;
+	}
+
+	&__icon-star,
+	&__icon-location {
+		width: 1.75rem;
+		height: 1.75rem;
+		fill: $pinkMedium;
+	}
+
+	&__icon-location {
+		margin-right: 0.5rem;
+	}
+
+	&__location {
+		font-size: 1.2rem;
+		display: flex;
+		align-items: center;
+		margin-right: 2rem;
+	}
+
+	&__rating {
+		background: $pinkMedium;
+		color: $white;
+		margin-left: 3rem;
+		padding: 0 2.25rem;
+		align-self: stretch;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		&-average {
+			font-size: 2.5rem;
+			font-weight: 300;
+			margin-bottom: -3px;
+		}
+
+		&-count {
+			font-size: 0.8rem;
+			text-transform: uppercase;
+		}
+	}
+}
+

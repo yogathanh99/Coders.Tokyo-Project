@@ -1,0 +1,108 @@
+.logo {
+  height: 3.25rem;
+  margin-left: 2rem;
+}
+
+.search {
+  flex: 0 0 40%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    background: $greyLight-2;
+    border: none;
+    padding: 0.7rem 2.2rem;
+    border-radius: 100px;
+    width: 90%;
+    transition: all .3s;
+    margin-right: -3rem;
+
+    &:focus {
+      width: 100%;
+      outline: none;
+      background: $greyLight-3;
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 100;
+      color: $greyLight-4;
+    }
+  }
+
+  &__input:focus+&__button {
+    background: $greyLight-3;
+  }
+
+  &__button {
+    border: none;
+    background: $greyLight-2;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &__icon {
+    height: 2rem;
+    width: 2rem;
+    fill: $greyDark-3;
+  }
+}
+
+.user-nav {
+  align-self: stretch;
+  display: flex;
+
+  align-items: center;
+
+  &>* {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  &>*:hover {
+    background: $greyLight-2;
+  }
+
+  &__icon-box {
+    position: relative;
+  }
+
+  &__icon {
+    height: 2.25rem;
+    width: 2.25rem;
+    fill: $greyDark-3;
+  }
+
+  &__notification {
+    position: absolute;
+    font-size: 0.8rem;
+    height: 1.75rem;
+    width: 1.75rem;
+    border-radius: 50%;
+    background: $pinkMedium;
+    color: $white;
+    top: 1.5rem;
+    right: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__user-photo {
+    height: 3.75rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+}

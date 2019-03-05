@@ -8,9 +8,14 @@
 }
 
 .header {
+  font-size: 1.4rem;
   height: 7rem;
   background: $white;
-  border-bottom: $greyLight-2;
+  border-bottom: 1px solid $greyLight-2;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .content {
@@ -19,7 +24,12 @@
 }
 
 .sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   background: $greyDark-1;
+
 
   flex: 0 0 18%;
 }
@@ -28,4 +38,12 @@
   background: $white;
 
   flex: 1;
+}
+
+.user-reviews {
+  font-size: 1.4rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

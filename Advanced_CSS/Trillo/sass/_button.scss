@@ -1,0 +1,46 @@
+.btn-inline {
+  border: none;
+  color: $pinkMedium;
+  font-size: inherits;
+  border-bottom: 1px solid currentColor;
+  cursor: pointer;
+  padding-bottom: 2px;
+  display: inline-block;
+  background: transparent;
+  transition: all 0.2s ease;
+
+  & span {
+    margin-left: 3px;
+    transition: margin-left .3s;
+  }
+
+  &:hover {
+    color: $greyDark-1;
+
+    span {
+      margin-left: 8px;
+    }
+  }
+
+  &:focus {
+    outline: none;
+    animation: pulsate 1s infinite;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  50% {
+    transform: scale(1.05);
+    box-shadow: 0 1rem 4rem rgba($black, 0.3);
+  }
+
+  100% {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}

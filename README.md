@@ -9,7 +9,7 @@
 - `elements < class < id < inline css < !important`
 - Reference [HERE](http://cssspecificity.com/) or [HERE](https://specificity.keegan.st/)
 ## 5. CSS Effect Reference:
-- Website for reference effect in CSS: [HERE](https://tympanus.net/codrops/)
+- Website for reference effect in CSS: [HERE](https://tympanus.net/codrops/) or [HERE](https://www.free-css.com/)
 - Transition: [HERE](https://www.w3schools.com/css/css3_transitions.asp)
 - Easing function for transition: [HERE](https://easings.net/)
 ## 6. CSS Grid: [HERE](https://css-tricks.com/snippets/css/complete-guide-grid/)
