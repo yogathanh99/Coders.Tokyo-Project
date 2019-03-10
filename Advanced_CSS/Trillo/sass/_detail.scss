@@ -3,6 +3,10 @@
   padding: 4.5rem;
   background: $greyLight-1;
   border-bottom: $line;
+
+  @media only screen and (max-width: $bg-medium) {
+    padding: 3rem;
+  }
 }
 
 .description {
@@ -12,6 +16,11 @@
   padding: 3rem;
   flex: 0 0 60%;
   margin-right: 4.5rem;
+
+  @media only screen and (max-width: $bg-medium) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
 }
 
 .user-reviews {
@@ -58,7 +67,9 @@
     margin-right: auto;
   }
 
-  &__friends {}
+  &__friends {
+    display: flex;
+  }
 
   &__photo {
     box-sizing: content-box;
@@ -68,7 +79,7 @@
     border: 3px solid $white;
 
     &:not(:last-child) {
-      margin-right: -1.5rem;
+      margin-right: -2rem;
     }
   }
 }

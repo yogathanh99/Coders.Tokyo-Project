@@ -6,6 +6,11 @@
   position: relative;
   overflow: hidden;
 
+  @media only screen and (max-width: $bg-medium) {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+
   &::before {
     content: "\201C";
     position: absolute;
@@ -43,6 +48,7 @@
       color: $greyDark-3;
     }
   }
+
 
   &__photo {
     width: 4rem;
