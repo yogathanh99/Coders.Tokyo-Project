@@ -1,85 +1,94 @@
 .detail {
-  display: flex;
-  padding: 4.5rem;
-  background: $greyLight-1;
-  border-bottom: $line;
+	display: flex;
+	padding: 4.5rem;
+	background: $greyLight-1;
+	border-bottom: $line;
 
-  @media only screen and (max-width: $bg-medium) {
-    padding: 3rem;
-  }
+	@media only screen and (max-width: $bg-medium) {
+		padding: 3rem;
+	}
+
+	@media only screen and (max-width: $bg-small) {
+		flex-direction: column;
+	}
 }
 
 .description {
-  font-size: 1.4rem;
-  background: $white;
-  box-shadow: 0 2rem 6rem rgba($greyDark-3, .3);
-  padding: 3rem;
-  flex: 0 0 60%;
-  margin-right: 4.5rem;
+	font-size: 1.4rem;
+	background: $white;
+	box-shadow: 0 2rem 6rem rgba($greyDark-3, 0.3);
+	padding: 3rem;
+	flex: 0 0 60%;
+	margin-right: 4.5rem;
 
-  @media only screen and (max-width: $bg-medium) {
-    padding: 2rem;
-    margin-right: 3rem;
-  }
+	@media only screen and (max-width: $bg-medium) {
+		padding: 2rem;
+		margin-right: 3rem;
+	}
+
+	@media only screen and (max-width: $bg-small) {
+		margin-bottom: 2rem;
+		margin-right: 0;
+	}
 }
 
 .user-reviews {
-  flex: 1;
+	flex: 1;
 }
 
 .list {
-  list-style: none;
-  margin: 3rem 0;
-  padding: 3rem 0;
-  border-top: $line;
-  border-bottom: $line;
+	list-style: none;
+	margin: 3rem 0;
+	padding: 3rem 0;
+	border-top: $line;
+	border-bottom: $line;
 
-  display: flex;
-  flex-wrap: wrap;
+	display: flex;
+	flex-wrap: wrap;
 
-  &__item {
-    flex: 0 0 50%;
-    margin-bottom: 0.7em;
-  }
+	&__item {
+		flex: 0 0 50%;
+		margin-bottom: 0.7em;
+	}
 
-  &__item::before {
-    content: "";
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    margin-right: 0.7rem;
+	&__item::before {
+		content: '';
+		display: inline-block;
+		width: 1rem;
+		height: 1rem;
+		margin-right: 0.7rem;
 
-    //Use mask to create icon >
-    background-color: $pinkMedium;
-    -webkit-mask-image: url(../img/SVG/chevron-thin-right.svg);
-    -webkit-mask-size: cover; //Similar with background-size
-  }
+		//Use mask to create icon >
+		background-color: $pinkMedium;
+		-webkit-mask-image: url(../img/SVG/chevron-thin-right.svg);
+		-webkit-mask-size: cover; //Similar with background-size
+	}
 }
 
 .recommend {
-  font-size: 1.3rem;
-  color: $greyDark-3;
+	font-size: 1.3rem;
+	color: $greyDark-3;
 
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 
-  &__count {
-    margin-right: auto;
-  }
+	&__count {
+		margin-right: auto;
+	}
 
-  &__friends {
-    display: flex;
-  }
+	&__friends {
+		display: flex;
+	}
 
-  &__photo {
-    box-sizing: content-box;
-    width: 4rem;
-    height: 4rem;
-    border-radius: 50%;
-    border: 3px solid $white;
+	&__photo {
+		box-sizing: content-box;
+		width: 4rem;
+		height: 4rem;
+		border-radius: 50%;
+		border: 3px solid $white;
 
-    &:not(:last-child) {
-      margin-right: -2rem;
-    }
-  }
+		&:not(:last-child) {
+			margin-right: -2rem;
+		}
+	}
 }
