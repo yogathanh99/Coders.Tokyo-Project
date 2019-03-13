@@ -1,0 +1,31 @@
+.container {
+  width: 1000px;
+  margin: 30px auto;
+
+  display: grid;
+  grid-template-rows: 100px 200px 400px 100px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+
+
+  &>* {
+    background: orangered;
+    padding: 30px;
+    color: white;
+    font-size: 30px;
+  }
+}
+
+.header,
+.footer {
+  grid-column: 1/-1;
+}
+
+.slidebar {
+  grid-column: 4/-1;
+  grid-row: 2/span 2;
+}
+
+.main {
+  grid-column: 1/span 3;
+}
