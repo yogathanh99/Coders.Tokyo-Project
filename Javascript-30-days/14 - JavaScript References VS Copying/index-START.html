@@ -1,18 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>JS Reference VS Copy</title>
 </head>
+
 <body>
 
   <script>
     // start with strings, numbers and booleans
+    /*     let age = 100
+        let age2 = age
+        console.log(age, age2)
+        age = 200
+        console.log(age, age2) */
+
 
     // Let's say we have an array
     const players = ['Wes', 'Sarah', 'Ryan', 'Poppy'];
 
+
     // and we want to make a copy of it.
+    const temp = players
+    temp[3] = 'Vo'
+    console.log(players, temp) //Use copy normal -> Reference
 
     // You might think we can just do something like this:
 
@@ -27,10 +39,25 @@
     // So, how do we fix this? We take a copy instead!
 
     // one way
+    const team1 = players.slice()
+    team1[3] = 'Good'
+    console.log(players, team1)
 
     // or create a new array and concat the old one in
+    const team2 = [].concat(players)
+    team2[3] = 'Bad'
+    console.log(players, team2)
 
     // or use the new ES6 Spread
+    const temp2 = [...players]
+    temp2[3] = 'Thanh'
+    console.log(players,
+      temp2) //Use ES6 -> Not Reference -> It create new array from old array but it doesn't use deep copy
+
+    //Or use Array method of ES5 to create new array from original array
+    const team3 = Array.from(players)
+    team3[3] = 'Trung'
+    console.log(players, team3)
 
     // now when we update it, the original one isn't changed
 
@@ -43,14 +70,43 @@
     };
 
     // and think we make a copy:
+    //original copy -> Reference
+    /*     const ob1 = person
+        ob1.number = 11
+        console.log(person, ob1) */
 
     // how do we take a copy instead?
+    //Use Method Object.assgin of Javasript
+    const ob2 = Object.assign({}, person, {
+      number: 11
+    })
+    console.log(person, ob2)
 
     // We will hopefully soon see the object ...spread
+    const ob3 = {
+      ...person
+    }
+    ob3.number = 33
+    console.log(person, ob3)
 
     // Things to note - this is only 1 level deep - both for Arrays and Objects. lodash has a cloneDeep method, but you should think twice before using it.
+    const oriObject = {
+      name: 'Thanh',
+      age: 11,
+      profile: {
+        frontEnd: 'React',
+        backEnd: 'Node'
+      }
+    }
 
+    //stringify: convert object to string
+    //parse: convert string to object
+    const dev = JSON.parse(JSON.stringify(oriObject))
+    dev.profile.frontEnd = 'Vue'
+    console.clear()
+    console.log(oriObject, dev)
   </script>
 
 </body>
+
 </html>
