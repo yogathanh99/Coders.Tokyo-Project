@@ -17,3 +17,5 @@ Draw project -> estimate time for code
 Oh my zsh
 
 awsome-react
+
+Curry Function
