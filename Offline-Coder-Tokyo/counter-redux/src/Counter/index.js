@@ -12,7 +12,7 @@ class Counter extends React.Component {
 
   render() {
     const {
-      props: { count },
+      props: { reducerCount },
       increValue,
       decreValue,
     } = this;
@@ -20,17 +20,14 @@ class Counter extends React.Component {
     return (
       <div style={{ textAlign: 'center' }}>
         <button onClick={increValue}>+</button>
-        <p>{count}</p>
+        <p>{reducerCount}</p>
         <button onClick={decreValue}>-</button>
       </div>
     );
   }
 }
-
-const mapStateToProps = state => {
-  return {
-    count: state.count,
-  };
-};
+const mapStateToProps = ({ count }) => ({
+  reducerCount: count,
+});
 
 export default connect(mapStateToProps)(Counter);
