@@ -1,33 +1,30 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-class Counter extends React.Component {
-  increValue = () => {
-    this.props.dispatch({ type: 'INCREMENT' });
-  };
+const Counter = props => {
+  const { reducerCount, increment, decrement } = props;
 
-  decreValue = () => {
-    this.props.dispatch({ type: 'DECREMENT' });
-  };
+  return (
+    <div style={{ textAlign: 'center' }}>
+      <button onClick={increment}>+</button>
+      <p>{reducerCount}</p>
+      <button onClick={decrement}>-</button>
+    </div>
+  );
+};
 
-  render() {
-    const {
-      props: { reducerCount },
-      increValue,
-      decreValue,
-    } = this;
-
-    return (
-      <div style={{ textAlign: 'center' }}>
-        <button onClick={increValue}>+</button>
-        <p>{reducerCount}</p>
-        <button onClick={decreValue}>-</button>
-      </div>
-    );
-  }
-}
 const mapStateToProps = ({ count }) => ({
   reducerCount: count,
 });
 
-export default connect(mapStateToProps)(Counter);
+const mapDispatchToProps = dispatch => {
+  return {
+    increment: () => dispatch({ type: 'INCREMENT' }),
+    decrement: () => dispatch({ type: 'DECREMENT' }),
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(Counter);

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
+
 import Counter from './Counter';
 
 const initState = {
@@ -26,14 +27,12 @@ const reducer = (state = initState, action) => {
 
 const store = createStore(reducer);
 
-class App extends React.Component {
-  render() {
-    return (
-      <Provider store={store}>
-        <Counter />
-      </Provider>
-    );
-  }
-}
+const App = () => {
+  return (
+    <Provider store={store}>
+      <Counter />
+    </Provider>
+  );
+};
 
 export default App;
